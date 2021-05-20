@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using T2009M.session1;
 
 namespace T2009M
 {
@@ -19,6 +21,26 @@ namespace T2009M
             {
                 Console.WriteLine(a+" la so nguyen to");
             }
+
+            Student st = new Student("Lê Văn Nam", 19);
+            st.ShowInfo();
+            
+            Student.SayHello();
+            
+            // tao 1 mang 3 sinh vien
+            Student[] stArray = new Student[3];
+            stArray[0] = st;
+            stArray[1] = new Student();
+            stArray[2] = new Student();
+            
+            // List
+            List<Student> listStudents = new List<Student>();
+            listStudents.Add(new Student());
+            // list string
+            List<string> strList = new List<string>();
+            // list int
+            List<int> intsArr = new List<int>();
+            intsArr.Add(6);
         }
 
         public static bool CheckPrime(int n)
