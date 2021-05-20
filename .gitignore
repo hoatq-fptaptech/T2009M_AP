@@ -1,0 +1,7 @@
+﻿/T2009M/T2009M.csproj
+bin
+obj
+*.sln
+*.xml
+.idea
+Properties
