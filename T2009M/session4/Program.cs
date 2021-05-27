@@ -1,4 +1,6 @@
-﻿namespace T2009M.session4
+﻿using System;
+
+namespace T2009M.session4
 {
     public delegate void ShowString(string s);// khai bao 1 delegate dai dien cho cac ham return void vaf tham so: string
     public class Program
@@ -14,6 +16,13 @@
             ss += DemoDelegate.ShowMsg;
             ss += DemoDelegate.ShowMsg;
             ss("xin chao cac ban");// chay delegate
+            Calculate c = new Calculate(Calcutation.Add);
+            c += Calcutation.Sub;
+            c += Calcutation.Multi;
+            c += Calcutation.Div;
+            int rs = c(5, 3);
+            Console.WriteLine("rs: "+rs);
+            dd.Running();
         }
     }
 }
